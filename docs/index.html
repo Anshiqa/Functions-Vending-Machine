@@ -1,0 +1,111 @@
+<html>
+<head>
+    <link href="font.css" rel="stylesheet"/> 
+    <link href="Parabola.css" rel="stylesheet"/> 
+
+</head>
+
+<body>
+ <input id="a" type="number">
+<span id="result"></span>
+    
+<div id=buttons> 
+<input type="button" class="q1" value="1" onclick="quad1()" />
+<input type="button" class="q2" value="2" onclick="quad2()" />
+<input type="button" class="q3" value="3" onclick="quad3()" />
+<input type="button" class="q4" value="4" onclick="quad4()" />
+<input type="button" class="q5" value="5" onclick="quad5()" />
+<input type="button" class="q6" value="6" onclick="quad6()" />
+<input type="button" class="q7" value="7" onclick="quad7()" />
+<input type="button" class="q8" value="8" onclick="quad8()" />
+<input type="button" class="q9" value="9" onclick="quad9()" />
+    </div>
+<img id="machine" src ="https://i.imgur.com/HaNvEvM.png"/>
+
+
+    
+    
+</body>
+
+<script>
+//gets the value of input (a) from html and assigns it as variable a. the span "result" in html is assigned as output. the variable, result, is then given a math operation value and finlly, the output is appended to the html part. 
+    
+function quad1() 
+{
+	var a = parseInt(document.getElementById ( "a" ).value);
+    var output = document.getElementById ( "result" );
+	var result = a * a + 8;
+    output.innerHTML = "y = " + result;
+}
+    
+
+function quad2() 
+{
+	var a = parseInt(document.getElementById ( "a" ).value);
+    var output = document.getElementById ( "result" );
+	var result = a + 2;
+    output.innerHTML = "result: " + result;
+}
+    
+function quad3() 
+{
+	var a = parseInt(document.getElementById ( "a" ).value);
+    var output = document.getElementById ( "result" );
+	var result = a + 5;
+    output.innerHTML = "result: " + result;
+}
+function quad4() 
+{
+	var a = parseInt(document.getElementById ( "a" ).value);
+    var output = document.getElementById ( "result" );
+	var result = a + 8;
+    output.innerHTML = "result: " + result;
+}
+    
+function quad5() 
+{
+	var a = parseInt(document.getElementById ( "a" ).value);
+    var output = document.getElementById ( "result" );
+	var result = a + 2;
+    output.innerHTML = "result: " + result;
+}
+    
+function quad6() 
+{
+	var a = parseInt(document.getElementById ( "a" ).value);
+    var output = document.getElementById ( "result" );
+	var result = a + 5;
+    output.innerHTML = "result: " + result;
+}
+
+function quad7() 
+{
+	var a = parseInt(document.getElementById ( "a" ).value);
+    var output = document.getElementById ( "result" );
+	var result = a + 8;
+    output.innerHTML = "result: " + result;
+}
+    
+function quad8() 
+{
+	var a = parseInt(document.getElementById ( "a" ).value);
+    var output = document.getElementById ( "result" );
+	var result = a + 2;
+    output.innerHTML = "result: " + result;
+}
+    
+function quad9() 
+{
+	var a = parseInt(document.getElementById ( "a" ).value);
+    var output = document.getElementById ( "result" );
+	var result = a + 5;
+    output.innerHTML = "result: " + result;
+}
+
+
+</script>
+
+
+
+
+</html>
