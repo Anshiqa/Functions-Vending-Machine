@@ -7,12 +7,7 @@
     color: slategrey
 }
 
-#machine 
-{
-position: relative;
-width: 450px;
-z-index: 100;
-}
+
 
 #a
 {
@@ -29,6 +24,13 @@ z-index: 100;
     border-style: none;
     text-align: center
     
+}
+
+#machine 
+{
+position: relative;
+width: 450px;
+z-index: 100;
 }
 
 #result
