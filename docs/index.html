@@ -6,10 +6,16 @@
 </head>
 
 <body>
+    
+<div id="instructions">
+    <p> <span style="color:black"> <u> <b>Functions: A process from Input to Output </b> </u> </span> </p>
+    <p id="open"> Hi! You seem thirsty (for knowledge, I hope).  <span style="color: #E0115F"> Well, enter a number of coins in the <b> INPUT </b> and <b>select a product </b>. </span> </p>
+    <p id="open2"> Observe what the function machine churns out as your <span style="color: #E0115F"> <b> OUTPUT </b>  </span> based on the product you chose.  </p>
+</div>
  <input id="a" type="number">
 <span id="result"></span>
     
-<div id=buttons> 
+<div id=graphics> 
 <input type="button" class="q1" value="1" onclick="quad1()" />
 <input type="button" class="q2" value="2" onclick="quad2()" />
 <input type="button" class="q3" value="3" onclick="quad3()" />
@@ -19,10 +25,13 @@
 <input type="button" class="q7" value="7" onclick="quad7()" />
 <input type="button" class="q8" value="8" onclick="quad8()" />
 <input type="button" class="q9" value="9" onclick="quad9()" />
-    </div>
+
 <img id="machine" src ="https://i.imgur.com/HaNvEvM.png"/>
+</div>
 
-
+<div id="eqnbox"> 
+    <p id="eqn"> Your Chosen Function </p>
+</div>
     
     
 </body>
@@ -36,6 +45,7 @@ function quad1()
     var output = document.getElementById ( "result" );
 	var result = a * a + 8;
     output.innerHTML = "y = " + result;
+ document.getElementById("eqn").innerHTML="y = x <sup>2 </sup>  + 8";
 }
     
 
@@ -43,63 +53,72 @@ function quad2()
 {
 	var a = parseInt(document.getElementById ( "a" ).value);
     var output = document.getElementById ( "result" );
-	var result = a + 2;
-    output.innerHTML = "result: " + result;
+	var result = 2*a*a +6*a + 4;
+    output.innerHTML = "y = " + result;
+     document.getElementById("eqn").innerHTML="y = 2x <sup>2 </sup>  + 6x +4";
+
 }
     
 function quad3() 
 {
 	var a = parseInt(document.getElementById ( "a" ).value);
     var output = document.getElementById ( "result" );
-	var result = a + 5;
-    output.innerHTML = "result: " + result;
+	var result = a*a + 6*a ;
+    output.innerHTML = "y = " + result;
+    document.getElementById("eqn").innerHTML="y = x <sup>2 </sup> + 6x"
 }
 function quad4() 
 {
 	var a = parseInt(document.getElementById ( "a" ).value);
     var output = document.getElementById ( "result" );
-	var result = a + 8;
-    output.innerHTML = "result: " + result;
+	var result = a*a + 4*a + 8;
+    output.innerHTML = "y = " + result;
+    document.getElementById("eqn").innerHTML="y = x <sup>2 </sup> +4a + 8"
 }
     
 function quad5() 
 {
 	var a = parseInt(document.getElementById ( "a" ).value);
     var output = document.getElementById ( "result" );
-	var result = a + 2;
-    output.innerHTML = "result: " + result;
+	var result = 3*a*a + 7*a + 9;
+    output.innerHTML = "y = " + result;
+    document.getElementById("eqn").innerHTML="y = 3x <sup>2 </sup> + 7x + 9"
 }
     
 function quad6() 
 {
 	var a = parseInt(document.getElementById ( "a" ).value);
     var output = document.getElementById ( "result" );
-	var result = a + 5;
-    output.innerHTML = "result: " + result;
+	var result = 99*a*a + 5*a - 8;
+    output.innerHTML = "y = " + result;
+    document.getElementById("eqn").innerHTML="y = 99x <sup>2 </sup> +5x - 8"
 }
 
 function quad7() 
 {
 	var a = parseInt(document.getElementById ( "a" ).value);
     var output = document.getElementById ( "result" );
-	var result = a + 8;
-    output.innerHTML = "result: " + result;
+	var result = 45*a*a + 6*a + 15;
+    output.innerHTML = "y = " + result;
+    document.getElementById("eqn").innerHTML="y = 45x <sup>2 </sup> + 6x + 15"
 }
     
 function quad8() 
 {
 	var a = parseInt(document.getElementById ( "a" ).value);
     var output = document.getElementById ( "result" );
-	var result = a + 2;
-    output.innerHTML = "result: " + result;
+	var result = 8*a*a + 8*a + 8;
+    output.innerHTML = "y = " + result;
+    document.getElementById("eqn").innerHTML="y = 8x <sup>2 </sup> + 8x + 8"
 }
     
 function quad9() 
 {
 	var a = parseInt(document.getElementById ( "a" ).value);
     var output = document.getElementById ( "result" );
-	var result = a + 5;
-    output.innerHTML = "result: " + result;
+	var result = 76*a*a + 15*a -7;
+    output.innerHTML = "y = " + result;
+    document.getElementById("eqn").innerHTML="y = 76x <sup>2 </sup> + 15x - 7"
 }
 
 
